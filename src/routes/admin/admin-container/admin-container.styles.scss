@@ -1,0 +1,83 @@
+.admin-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  font-family: Oxygen, 'san-serif';
+}
+
+.pro-sidebar {
+  border-radius: 0.7rem;
+  margin-left: 1rem;
+  .logo {
+    filter: brightness(100);
+  }
+  position: fixed;
+  background-color: #96304c;
+
+  .container {
+    background-color: #fdb1c6;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.pro-sidebar-content ul a .customIcons {
+  margin-right: 1.3rem;
+}
+
+.sideMenuHeading {
+  margin-left: 1rem;
+  
+}
+
+.sideMenu li {
+  font-weight: bolder;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.head-div {
+  align-items: center;
+}
+
+.breadcrumb {
+  margin: auto 2rem;
+
+  .breadcrumb-item a .child-breadcrumb {
+    text-decoration: underline;
+    color: rgba(46, 31, 31);
+  }
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(216, 216, 216, 0.11);
+  width: 100%;
+}
+
+.navBar {
+  height: 74px;
+  justify-content: end;
+  width: 96%;
+  margin: 0 0 1rem 1.5rem;
+  background-color: #fdb1c6;
+  border-radius: 0.7rem;
+  box-shadow: .5em .5em 1em rgb(190, 176, 181);
+}
+
+.dash-scroll {
+  background-color: rgba(201, 192, 192, 0.068);
+  border: 1px solid rgba(51, 51, 51, 0.137);
+  border-radius: 10px;
+}
+
+.navLinks {
+  margin-right: 2rem;
+}
+
+
+
+// .gAMYCL {
+//   border: none !important;
+// }

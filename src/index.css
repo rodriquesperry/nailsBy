@@ -1,13 +1,53 @@
-body {
+#root {
+  font-family: 'Caveat', cursive;
+  padding-top: 0px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: rgb(46, 31, 31);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.heading-hr {
+  margin: 0.5rem 8rem;
+  border: solid 0.1rem #96304c;
+  box-shadow: 10px 5px 5px #96304c;
+}
+
+.box-shadow {
+  width: 100%;
+  box-shadow: 3px 3px #96304b79, -1em 0.5em 1em #96304b57;
+}
+
+.page-heading {
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .heading-hr {
+    margin: 0.5rem 18rem;
+    border: solid 0.1rem #96304c;
+    box-shadow: 10px 5px 5px #96304c;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .heading-hr {
+    margin: 0.5rem 25rem;
+    border: solid 0.1rem #96304c;
+    box-shadow: 10px 5px 5px #96304c;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+  .heading-hr {
+    margin: 0.5rem 37rem;
+    border: solid 0.1rem #96304c;
+    box-shadow: 10px 5px 5px #96304c;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .heading-hr {
+    margin: 0.5rem 72rem;
+    border: solid 0.1rem #96304c;
+    box-shadow: 10px 5px 5px #96304c;
+  }
 }

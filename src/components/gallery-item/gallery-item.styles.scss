@@ -1,0 +1,21 @@
+.gallery-item-container {
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
+  .gallery-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    width: 60%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .gallery-image-container {
+      width: 100%;
+    }
+  }
+}

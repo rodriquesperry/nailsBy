@@ -1,0 +1,46 @@
+.main-container {
+  margin-bottom: 5rem;
+
+  .add-menu-item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 0 2rem;
+
+    form {
+      margin-left: 1rem;
+    }
+
+    .add-menu-item-price {
+      display: flex;
+    }
+
+    .menu-item-price-dollar-sign {
+      font-size: 1.5rem;
+      margin-right: 0.3rem;
+    }
+
+    .row {
+      padding: 0 1rem;
+    }
+
+    .menu-list {
+      overflow-y: scroll;
+      height: 550px;
+      border: 3px solid #999999;
+    }
+
+    .menu-item-container {
+      h2 {
+        font-family: 'Caveat', cursive;
+      }
+    }
+
+    .btn-menu {
+      background-color: #96304c;
+      font-size: 1rem;
+      font-family: Oxygen, 'san-serif';
+      color: #fff;
+    }
+  }
+}

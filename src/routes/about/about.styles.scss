@@ -1,0 +1,43 @@
+.about-container {
+  padding: 0 5rem;
+  display: grid;
+  place-items: center;
+
+  img {
+    width: 20%;
+  }
+}
+
+.team-images-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 5rem 2rem;
+  width: 94%;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .about-container {
+    padding: 0 5rem;
+    margin: 2rem;
+    font-size: 2rem;
+    text-align: center;
+
+    .about-image-container {
+      width: 45%;
+      margin: 2rem 16rem;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .about-text {
+      font-family: Oxygen, 'sans-serif';
+      font-size: 1.5rem;
+    }
+  }
+}

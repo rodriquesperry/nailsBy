@@ -1,0 +1,22 @@
+.footer-container {
+    padding-bottom: 1rem;
+    font-family: Oxygen, 'san-serif';
+  
+
+  .footer-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-contact-info-container {
+    margin: 5rem 0 0 10rem;
+    font-size: 1.2rem;
+  }
+
+  #rockDigitalHref {
+      margin-left: .2rem;
+      text-decoration: none;
+      color: rgb(46, 31, 31);
+  }
+}
