@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 import './navigation.styles.scss';
 
@@ -16,7 +16,9 @@ const Navigation = () => {
       {[false].map((expand) => (
         <Navbar key={expand} expand={expand} className='main-nav sticky-top'>
           <Container fluid>
-            <Navbar.Brand href='#'>Nails by...</Navbar.Brand>
+            <Link to='/'>
+              <Navbar.Brand>Nails by...</Navbar.Brand>
+            </Link>
             <Navbar.Toggle
               className='bg-light'
               aria-controls={`offcanvasNavbar-expand-${expand}`}
@@ -36,23 +38,31 @@ const Navigation = () => {
               <hr />
               <Offcanvas.Body>
                 <Nav className='justify-content-end flex-grow-1 pe-3'>
-                  <Nav.Link href='/'>HOME</Nav.Link>
-                  <Nav.Link href='/menu'>MENU</Nav.Link>
-                  <Nav.Link href='/book'>BOOK</Nav.Link>
-                  <Nav.Link href='/gallery'>GALLERY</Nav.Link>
+                  <Link to='/'>
+                    <Nav.Link>HOME</Nav.Link>
+                  </Link>
+                  <Link to='/menu'>
+                    <Nav.Link>MENU</Nav.Link>
+                  </Link>
+                  <Link to='/book'>
+                    <Nav.Link>BOOK</Nav.Link>
+                  </Link>
+                  <Link to='/gallery'>
+                    <Nav.Link>GALLERY</Nav.Link>
+                  </Link>
 
                   <NavDropdown
                     title='ABOUT'
                     color='#fff'
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href='/about'>
-                      Salon About
-                    </NavDropdown.Item>
+                    <Link to='/about'>
+                      <NavDropdown.Item>Salon About</NavDropdown.Item>
+                    </Link>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href='/tech-about'>
-                      Tech About
-                    </NavDropdown.Item>
+                    <Link to='/tech-about'>
+                      <NavDropdown.Item>Tech About</NavDropdown.Item>
+                    </Link>
                   </NavDropdown>
                 </Nav>
               </Offcanvas.Body>
