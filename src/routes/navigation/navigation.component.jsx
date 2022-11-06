@@ -38,31 +38,19 @@ const Navigation = () => {
               <hr />
               <Offcanvas.Body>
                 <Nav className='justify-content-end flex-grow-1 pe-3'>
-                  <Link to='/'>
-                    <Nav.Link>HOME</Nav.Link>
-                  </Link>
-                  <Link to='/menu'>
-                    <Nav.Link>MENU</Nav.Link>
-                  </Link>
-                  <Link to='/book'>
-                    <Nav.Link>BOOK</Nav.Link>
-                  </Link>
-                  <Link to='/gallery'>
-                    <Nav.Link>GALLERY</Nav.Link>
-                  </Link>
+                  <Link to='/'>HOME</Link>
+                  <Link to='/menu'>MENU</Link>
+                  <Link to='/book'>BOOK</Link>
+                  <Link to='/gallery'>GALLERY</Link>
 
                   <NavDropdown
                     title='ABOUT'
                     color='#fff'
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <Link to='/about'>
-                      <NavDropdown.Item>Salon About</NavDropdown.Item>
-                    </Link>
+                    <Link to='/about'>Salon About</Link>
                     <NavDropdown.Divider />
-                    <Link to='/tech-about'>
-                      <NavDropdown.Item>Tech About</NavDropdown.Item>
-                    </Link>
+                    <Link to='/tech-about'>Tech About</Link>
                   </NavDropdown>
                 </Nav>
               </Offcanvas.Body>
