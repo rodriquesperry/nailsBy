@@ -1,18 +1,26 @@
 .about-container {
-  padding: 0 5rem;
+  padding: 0 3rem;
   display: grid;
   place-items: center;
+  font-size: 1.5rem;
 
   img {
-    width: 20%;
+    width: 100%;
+  }
+
+  .about-image-container {
+    margin-bottom: 1rem;
   }
 }
 
 .team-images-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: 5rem 2rem;
-  width: 94%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 3rem 0;
+  padding: 0 3rem;
+  display: grid;
+  place-items: center;
+  // width: 94%;
 
   img {
     width: 100%;
@@ -20,6 +28,11 @@
 }
 
 @media screen and (min-width: 769px) {
+  .team-images-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 5rem 0;
+  }
+
   .about-container {
     padding: 0 5rem;
     margin: 2rem;

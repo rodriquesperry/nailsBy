@@ -41,7 +41,7 @@ const TechAbout = () => {
           </p>
         </div>
         <div className='tech-gallery'>
-            <Gallery />
+            <Gallery name='tech'/>
         </div>
       </div>
       <div className='tech-services'></div>

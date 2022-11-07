@@ -1,8 +1,18 @@
 
 .gallery-container {
-    margin: 5rem;
+    margin: 5rem 1rem;
 
     .heading-hr {
         margin-bottom: 5rem;
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .gallery-container {
+        margin: 5rem;
+    
+        .heading-hr {
+            margin-bottom: 5rem;
+        }
     }
 }

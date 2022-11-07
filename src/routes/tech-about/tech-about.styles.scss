@@ -1,20 +1,57 @@
 .tech-about-container {
   display: grid;
-  grid-template-columns: 3fr 30%;
-  padding: 5rem;
-
-  .about-tech {
-    font-size: 1.2rem;
-    font-family: Oxygen, 'san-serif';
-  }
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  font-size: 1.5rem;
 
   img {
-    float: left;
-    width: 30%;
-    margin: 0 1.5rem 1rem;
+    width: 100%;
+    padding: 10% 20% 5%;
   }
 
   .tech-gallery {
-    width: 100%;
+    .gallery-container {
+      margin: 0;
+      padding: 0;
+    
+      hr {
+        margin-bottom: 1rem;
+      }
+
+      .gallery-item-container {
+        margin: 0;
+      }
+    
+      .gallery-image-container {
+          grid-template-columns: 1fr 1fr;
+      }
+
+    }
+
+
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tech-about-container {
+    display: grid;
+    grid-template-columns: 3fr 30%;
+    padding: 5rem;
+
+    .about-tech {
+      font-size: 1.2rem;
+      font-family: Oxygen, 'san-serif';
+    }
+
+    img {
+      float: left;
+      width: 30%;
+      margin: 0 1.5rem 1rem;
+      padding: 0;
+    }
+
+    .tech-gallery {
+      width: 100%;
+    }
   }
 }

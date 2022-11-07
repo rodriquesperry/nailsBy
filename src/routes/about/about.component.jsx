@@ -27,7 +27,7 @@ const About = () => {
       <div className='team-container'>
         <h2 className='text-center mt-5'>Our Technicians</h2>
         <hr className='heading-hr mb-5 mt-2' />
-        <div className='team-images-container box-shadow'>
+        <div className='team-images-container'>
           <img
             src={require('../../assets/img/pexels-dellon-thomas-3394347.jpeg')}
             alt=''
