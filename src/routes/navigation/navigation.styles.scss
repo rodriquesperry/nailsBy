@@ -23,6 +23,7 @@
 
   .offcanvas-title {
     font-size: 2rem;
+    font-family: 'Caveat', cursive;
   }
 
   hr {
@@ -43,9 +44,18 @@
     text-decoration: none;
   }
 
-  .links:hover {
+  .links:hover, .dropdown-toggle:hover, .dropdown-item:hover {
     color: #96304c;
   }
+
+  .dropdown-toggle:active {
+    color: #96304c;
+  }
+
+  .dropdown-toggle::after {
+    color: #96304c;
+  }
+    
 
   .dropdown-menu {
     background-color: #f3b3c4;
@@ -53,6 +63,7 @@
 
   .dropdown-item:hover {
     box-shadow: 4px 3px #96304b79, -1em 0.5em 1em #96304b57;
+    background-color: #fff;
 
   }
 }
